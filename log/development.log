@@ -238,3 +238,10 @@ Processing by PostsController#create as HTML
   [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
 Redirected to http://159.89.225.105:34974/posts
 Completed 302 Found in 21ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/posts" for 71.90.209.159 at 2018-02-25 13:00:39 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.3ms)
