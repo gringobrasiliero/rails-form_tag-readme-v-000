@@ -222,3 +222,19 @@ Started GET "/posts/new" for 71.90.209.159 at 2018-02-25 12:59:44 +0000
 Processing by PostsController#new as HTML
   Rendered posts/new.html.erb within layouts/application (4.0ms)
 Completed 200 OK in 55ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 71.90.209.159 at 2018-02-25 13:00:27 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 71.90.209.159 at 2018-02-25 13:00:39 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"title"=>"Howdy", "description"=>"Rails"}, "authenticity_token"=>"hf5k0iUVnaWbL/mxv2FltD0/DwtEfSS78y2O1NyTuDLooKTSIjQo5RHqpH9B63xg/fdyANI+yP/yiVaL9s++hw=="}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Howdy"], ["description", "Rails"], ["created_at", "2018-02-25 13:00:39.369652"], ["updated_at", "2018-02-25 13:00:39.369652"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://159.89.225.105:34974/posts
+Completed 302 Found in 21ms (ActiveRecord: 3.2ms)
